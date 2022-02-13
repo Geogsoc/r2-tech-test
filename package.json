@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "setup-dbs": "psql -f ./setup.sql",
     "test": "jest",
-    "dev": "npx nodemon listen.js"
+    "dev": "npx nodemon listen.js",
+    "query": "psql -f ./query.sql >query.txt",
+    "seed": "node ./seeds/run-seed.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +22,11 @@
   },
   "homepage": "https://github.com/northcoders/r2-tech-test#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "pg": "^8.7.3",
+    "pg-format": "^1.0.4"
   },
   "devDependencies": {
     "jest": "^27.5.1",

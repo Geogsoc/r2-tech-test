@@ -11,7 +11,7 @@ exports.collectrecipes = () => {
   console.log("in the model");
   return db
     .query(
-      // "SELECT * FROM recipes, JOIN ingredients ON recipes.recipe_id = ingredients.recipe_id;"
+      // "SELECT recipes.recipe_id, recipes.imageUrl, recipes.instructions., JOIN ingredients ON recipes.recipe_id = ingredients.recipe_id;"
       "SELECT * FROM ingredients;"
     )
     .then((result) => {

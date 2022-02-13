@@ -1,6 +1,6 @@
 const supertest = require("supertest");
 const server = require("../server");
-const seed = require("../../seeds/seed");
+const seed = require("../seeds/seed");
 const data = require("../data/data.json");
 const request = supertest(server);
 const db = require("../db/index");
