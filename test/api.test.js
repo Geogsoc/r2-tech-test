@@ -40,8 +40,12 @@ test("request to /api/recipes returns all recipes", () => {
     });
 });
 
-test("request to /api/recipes returns all recipes", () => {
+test("request to /api/recipes returns query of based on ingredients", () => {
   return supertest(app)
-    .get("/api/recipes?ingredients=apples,bananas,carrots")
-    .expect(200);
+    .get("/api/recipes?ingredients=apples")
+    .expect(200)
+    .then((res) => {
+      console.log(res.body.recipes);
+      expect(res.body.recipes).toBeInstanceOf(Array);
+    });
 });
