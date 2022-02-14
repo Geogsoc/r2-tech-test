@@ -24,7 +24,24 @@ test("request to /api/recipes returns all recipes", () => {
     .get("/api/recipes")
     .expect(200)
     .then((res) => {
-      console.log(res.body.recipes);
-      // expect(res.body.recipes).toBeInstanceOf(Array);
+      expect(res.body.recipes).toBeInstanceOf(Array);
+      expect(res.body.recipes).toHaveLength(100);
+      res.body.recipes.forEach((recipe) => {
+        expect(recipe).toEqual(
+          expect.objectContaining({
+            id: expect.any(Number),
+            recipe_id: expect.any(String),
+            imageurl: expect.any(String),
+            instructions: expect.any(String),
+            ingredients: expect.any(Array),
+          })
+        );
+      });
     });
+});
+
+test("request to /api/recipes returns all recipes", () => {
+  return supertest(app)
+    .get("/api/recipes?ingredients=apples,bananas,carrots")
+    .expect(200);
 });

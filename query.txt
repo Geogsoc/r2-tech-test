@@ -1,1 +1,25 @@
 You are now connected to database "recipes" as user "elis".
+ id | recipe_id |         imageurl         |                                      instructions                                      |                                    ingredients                                     
+----+-----------+--------------------------+----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------
+ 56 | recipe-68 | http://www.images.com/25 | crush ingredients with mortar and pestle, mix with whole milk, serve in bowl           | {"almond milk 93g","flax 185g","linseed 0g","apricots 119g"}
+ 58 | recipe-12 | http://www.images.com/11 | 60 seconds on the highest setting your blender has, or until a smooth paste has formed | {"sugar 181g","oat milk 121g","cocoa nibs 137g","demerara sugar 92g"}
+ 71 | recipe-44 | http://www.images.com/25 | boil 'em, mash 'em, stick 'em in a blender                                             | {"mango juice 12g","apricots 100g","flax 146g","blueberries 187g","apricots 136g"}
+ 80 | recipe-38 | http://www.images.com/2  | crush ingredients with mortar and pestle, mix with whole milk, serve in bowl           | {"mango juice 125g","double cream 114g","oat milk 188g","strawberries 144g"}
+ 67 | recipe-56 | http://www.images.com/13 | spin it, twist it, pull it, flick it... bop it!                                        | {"lime 124g","oat milk 32g"}
+ 35 | recipe-34 | http://www.images.com/23 | boil 'em, mash 'em, stick 'em in a blender                                             | {"grapes 180g","flax 100g","double cream 174g","almond milk 36g"}
+ 36 | recipe-51 | http://www.images.com/4  | 60 seconds on the highest setting your blender has, or until a smooth paste has formed | {"oat milk 190g","flax 140g","almond milk 73g","coconut 196g"}
+ 16 | recipe-57 | http://www.images.com/18 | boil 'em, mash 'em, stick 'em in a blender                                             | {"linseed 144g","banana 120g","flax 122g"}
+ 44 | recipe-36 | http://www.images.com/21 | 60 seconds on the highest setting your blender has, or until a smooth paste has formed | {"lime 82g","flax 99g"}
+ 88 | recipe-97 | http://www.images.com/6  | spin it, twist it, pull it, flick it... bop it!                                        | {"oat milk 66g","oat milk 176g","grapes 187g"}
+ 82 | recipe-66 | http://www.images.com/25 | crush ingredients with mortar and pestle, mix with whole milk, serve in bowl           | {"oat milk 189g","apricots 62g","flax 69g","mango juice 180g"}
+ 40 | recipe-41 | http://www.images.com/19 | crush ingredients with mortar and pestle, mix with whole milk, serve in bowl           | {"strawberries 114g","blueberries 162g","oat milk 130g","mango juice 67g"}
+ 43 | recipe-85 | http://www.images.com/19 | crush ingredients with mortar and pestle, mix with whole milk, serve in bowl           | {"raisins 177g","apricots 151g","flax 75g","mango juice 15g"}
+  9 | recipe-17 | http://www.images.com/15 | boil 'em, mash 'em, stick 'em in a blender                                             | {"apricots 60g","almond milk 163g","flax 107g"}
+ 48 | recipe-75 | http://www.images.com/13 | blend with oat milk and ice, sprinkle with salt                                        | {"almond milk 151g","flax 39g"}
+ 57 | recipe-42 | http://www.images.com/15 | 60 seconds on the highest setting your blender has, or until a smooth paste has formed | {"sugar 166g","kale 90g","cinnamon 72g","flax 127g"}
+ 33 | recipe-95 | http://www.images.com/4  | crush ingredients with mortar and pestle, mix with whole milk, serve in bowl           | {"coconut 139g","flax 191g"}
+  1 | recipe-59 | http://www.images.com/18 | 60 seconds on the highest setting your blender has, or until a smooth paste has formed | {"demerara sugar 25g","flax 66g","apple juice 44g","oat milk 198g"}
+ 76 | recipe-30 | http://www.images.com/20 | boil 'em, mash 'em, stick 'em in a blender                                             | {"flax 75g","grapes 199g","strawberries 35g","apricots 7g"}
+  5 | recipe-77 | http://www.images.com/25 | blend with oat milk and ice, sprinkle with salt                                        | {"coconut 14g","coconut 57g","lime 153g","oat milk 31g"}
+(20 rows)
+

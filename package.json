@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "setup-dbs": "psql -f ./setup.sql",
-    "test": "jest",
+    "setup-db": "psql -f ./setup.sql",
+    "test": "npm run setup-db && PGDATABASE=recipes jest",
     "dev": "npx nodemon listen.js",
     "query": "psql -f ./query.sql >query.txt",
     "seed": "node ./seeds/run-seed.js"

@@ -26,7 +26,7 @@ const seed = (data) => {
         `INSERT INTO recipes(recipe_id, imageUrl, instructions) VALUES %L RETURNING*;`,
         formattedInstructions
       );
-      // console.log(formattedInstructions);
+
       return db.query(querystr);
     })
     .then(() => {

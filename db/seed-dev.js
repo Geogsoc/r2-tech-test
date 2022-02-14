@@ -1,5 +1,5 @@
 const data = require("../data/data.json");
-const seed = require("../../seeds/seed");
+const seed = require("../seeds/seed");
 
 const db = require("./");
 

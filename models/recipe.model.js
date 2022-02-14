@@ -1,21 +1,17 @@
 const db = require("../db/index");
 
-// exports.collectrecipes = () => {
-//   return db.query("SELECT * FROM recipes;").then((result) => {
-//     console.log("in the model");
-//     return result.rows;
-//   });
-// };
-
-exports.collectrecipes = () => {
+exports.collectrecipes = (ingredients) => {
   console.log("in the model");
-  return db
-    .query(
-      // "SELECT recipes.recipe_id, recipes.imageUrl, recipes.instructions., JOIN ingredients ON recipes.recipe_id = ingredients.recipe_id;"
-      "SELECT * FROM ingredients;"
-    )
-    .then((result) => {
-      console.log("in the model");
-      return result.rows;
-    });
+  const queryValues = [];
+  let querystr =
+    "SELECT recipes.*, ARRAY_AGG (name || ' ' || grams ||'g') ingredients FROM recipes JOIN ingredients ON recipes.recipe_id = ingredients.recipe_id GROUP BY recipes.id;";
+
+  // if (ingredients) {
+  //   queryValues.push(category);
+  //   queryStr += ` WHERE ingredients.name != $1`;
+  // }
+  return db.query(querystr, queryValues).then((result) => {
+    // const allrecipes = result.rows;
+    return result.rows;
+  });
 };
